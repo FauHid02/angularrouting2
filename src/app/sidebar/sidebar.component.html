@@ -35,8 +35,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item has-treeview {{ moduleName == 'dasboard' ? 'menu-open' : ''}}">
+            <a href="#" class="nav-link {{moduleName == 'dasboard' ? 'active' : '' }} {{moduleName == 'dasboard2' ? 'active' : ''}} ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -65,11 +65,10 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="assets/pages/widgets.html" class="nav-link">
+            <a href="/mahasiswa" class="nav-link {{ moduleName == 'mahasiswa' ? 'active' : '' }}">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
+                Mahasiswa
               </p>
             </a>
           </li>
